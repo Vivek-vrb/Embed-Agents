@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        #agent-container {
+            width: 400px;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+    
+    <script
+        type="module"
+        src="https://agent.d-id.com/v1/index.js"
+        data-name="did-agent"
+        data-mode="fabio"
+        data-client-key="YXV0aDB8NjcxNjA1NDhhMTg4N2I3ZDllMTY2NzlmOm50QnZDb1B2NkpNQWcwbWhnOTJiQg=="
+        data-agent-id="agt_pgV49GYC"
+        data-monitor="true">
+    </script>
+
+</head>
+<body>
+    <div id="agent-container">
+        <h2>Agent Loading...</h2>
+        <p>Please wait while the agent interface is being loaded.</p>
+    </div>
+</body>
+</html>
